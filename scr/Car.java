@@ -3,8 +3,9 @@ public class Car {
     String brand;
     String color;
 
-    public void Drive(){
-        System.out.println("vroom");
+    public void start(){
+        String output= "vroom";
+        System.out.println(output);
     }
 
 }
