@@ -1,11 +1,12 @@
 public class Tile {
     String background;
-
-    public void getNeighbor() {
-
+    public Tile(String background) {
+        this.background = background;
     }
-
     public void setNeighbor() {
+        
+    }
+    public void getNeighbor() {
 
     }
 
