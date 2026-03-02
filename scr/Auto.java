@@ -1,29 +1,4 @@
 public class Auto {
-//    private int wielen;
-//    public int deur;
-//    public String kleur;
-//
-//    public Auto(int input1, int input2, String input3) {
-//        wielen = input1;
-//        deur = input2;
-//        kleur = input3;
-//    }
-//
-//    void starten() {
-//        System.out.println("Ik start");
-//    }
-//
-//    private void rijden() {
-//        System.out.println("Ik rij");
-//    }
-//    public void status() {
-//       starten();
-//       rijden();
-//    }
-//    public void status2() {
-//        System.out.println(wielen);
-//    }
-
     private int wielen;
     private String kleur;
 
@@ -51,4 +26,28 @@ public class Auto {
     public String getKleur() {
         return this.kleur;
     }
+//    private int wielen;
+//    public int deur;
+//    public String kleur;
+//
+//    public Auto(int input1, int input2, String input3) {
+//        wielen = input1;
+//        deur = input2;
+//        kleur = input3;
+//    }
+//
+//    void starten() {
+//        System.out.println("Ik start");
+//    }
+//
+//    private void rijden() {
+//        System.out.println("Ik rij");
+//    }
+//    public void status() {
+//       starten();
+//       rijden();
+//    }
+//    public void status2() {
+//        System.out.println(wielen);
+//    }
 }
