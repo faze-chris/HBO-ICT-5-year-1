@@ -1,5 +1,5 @@
 public class Tile {
-    String background;
+    private String background;
 
     public Tile(String background) {
         this.background = background;

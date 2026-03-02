@@ -1,6 +1,6 @@
 public class GameElement {
-    String type;
-    String icon;
+    private String type;
+    private String icon;
 
     public GameElement(String type, String icon) {
         this.type = type;
@@ -24,7 +24,7 @@ public class GameElement {
     }
 
     public void move() {
-    
+
     }
 
     public void push() {

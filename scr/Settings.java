@@ -74,7 +74,6 @@ public class Settings {
         this.followerSpeed = followerSpeed;
     }
 
-
     public void applySettings() {
         System.out.println("apply settings");
     }
