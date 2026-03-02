@@ -13,7 +13,6 @@ public class Tile {
         return this.background;
     }
 
-
     public String getNeighbor() {
 //        return this.getNeighbor() = getNeighbor();
         return this.background;
