@@ -15,11 +15,11 @@ public class Auto {
         return this.wielen;
     }
 
-    public int setwielen(int wielen) {
+    public void setwielen(int wielen) {
         this.wielen = wielen;
     }
 
-    public String setkleur(String kleur) {
+    public void setkleur(String kleur) {
         this.kleur = kleur;
     }
 
