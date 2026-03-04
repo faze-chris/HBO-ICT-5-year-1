@@ -2,9 +2,25 @@ public class Game {
     private boolean isWon;
     private boolean isLost;
 
-    public void startGame() {
+    private Settings settings;
+
+    public Game(boolean isWon, boolean isLost) {
+        this.isWon = isWon;
+        this.isLost = isLost;
+    }
+
+    public boolean startGame() {
         isWon = false;
         isLost = false;
+        return true;
+    }
+
+    public int generateBoard() {
+        return 0;
+    }
+
+    public boolean checkGameState() {
+        return false;
     }
 
     public void setWon(boolean isWon) {
@@ -21,13 +37,5 @@ public class Game {
 
     public boolean getIsLost() {
         return this.isLost;
-    }
-
-    public boolean generateBoard() {
-        return false;
-    }
-
-    public boolean checkGameStats() {
-        return false;
     }
 }

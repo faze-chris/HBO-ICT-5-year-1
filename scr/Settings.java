@@ -5,9 +5,9 @@ public class Settings {
     private int boardHeight;
     private int boxPercentage;
     private int rockPercentage;
-    private int followerSpeed;
+    private double followerSpeed;
 
-    public Settings(String difficulty, String theme, int boardWidth, int boardHeight, int boxPercentage, int rockPercentage, int followerSpeed) {
+    public Settings(String difficulty, String theme, int boardWidth, int boardHeight, int boxPercentage, int rockPercentage, double followerSpeed) {
         this.difficulty = difficulty;
         this.theme = theme;
         this.boardWidth = boardWidth;
@@ -15,7 +15,6 @@ public class Settings {
         this.boxPercentage = boxPercentage;
         this.rockPercentage = rockPercentage;
         this.followerSpeed = followerSpeed;
-
     }
 
     public void setDifficulty(String difficulty) {
@@ -66,11 +65,11 @@ public class Settings {
         this.rockPercentage = rockPercentage;
     }
 
-    public int getFollowerSpeed() {
+    public double getFollowerSpeed() {
         return this.followerSpeed;
     }
 
-    public void setRockFollowerSpeed(int followerSpeed) {
+    public void setFollowerSpeed(double followerSpeed) {
         this.followerSpeed = followerSpeed;
     }
 
