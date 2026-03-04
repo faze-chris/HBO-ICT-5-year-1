@@ -13,7 +13,7 @@ public class Tile {
     }
 
     public Tile getNeighbor(String direction) {
-        return this.neighbors.get(direction);
+        return this.neighbors.get(direction);   
     }
 
     public void setNeighbor(String direction, Tile neighbor) {
