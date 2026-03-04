@@ -23,11 +23,11 @@ public class Game {
         return this.isLost;
     }
 
-    public void generateBoard() {
-
+    public boolean generateBoard() {
+        return false;
     }
 
-    public void checkGameStats() {
-
+    public boolean checkGameStats() {
+        return false;
     }
 }

@@ -13,16 +13,15 @@ public class Tile {
         return this.background;
     }
 
-    public String getNeighbor() {
-//        return this.getNeighbor() = getNeighbor();
-        return this.background;
+    public void getNeighbor(String direction) {
+
     }
 
-    public void setNeighbor() {
-//        this.setNeighbor() = setNeighbor();
+    public void setNeighbor(String direction) {
     }
 
-    public void isEmpty() {
+    public boolean isEmpty() {
         System.out.println("Empty");
+        return false;
     }
 }

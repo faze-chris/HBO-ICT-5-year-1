@@ -23,13 +23,15 @@ public class GameElement {
         return this.icon;
     }
 
-    public void move() {
+    public void move(String direction) {
 
     }
 
-    public void push() {
+    public void push(String direction) {
+
     }
 
-    public void activate() {
+    public boolean activate() {
+        return false;
     }
 }
