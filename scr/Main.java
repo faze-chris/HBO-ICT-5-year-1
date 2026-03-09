@@ -19,7 +19,37 @@ public class Main {
 
         System.out.println("random fruit");
         System.out.println(fruit);
+        bubbleSort(fruit);
 
+        System.out.println("Na het sorteren (alfabetisch):");
+        System.out.println(fruit);
+    }
+
+    public static void bubbleSort(ArrayList<String> lijst) {
+        int n = lijst.size();
+        boolean gewisseld;
+
+
+        for (int i = 0; i < n - 1; i++) {
+            gewisseld = false;
+
+            for (int j = 0; j < n - i - 1; j++) {
+
+
+                if (lijst.get(j).compareTo(lijst.get(j + 1)) > 0) {
+
+                    String temp = lijst.get(j);
+                    lijst.set(j, lijst.get(j + 1));
+                    lijst.set(j + 1, temp);
+
+                    gewisseld = true;
+                }
+            }
+
+            if (!gewisseld) {
+                break;
+            }
+        }
     }
 }
 
