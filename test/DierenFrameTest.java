@@ -1,17 +1,34 @@
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
 import static org.junit.jupiter.api.Assertions.*;
+
 class DierenFrameTest {
 
-    @org.junit.jupiter.api.Test
-    void keyReleased() {
-        //Arrange,
-        // Act,
-        // Assert.
+    @Test
+    void keyPressedHonger() {
+        // Arrange
+        Hond testHond = new Hond("hond", 50, 50);
+
+        // Act
+        testHond.voer();
+
+        // Assert
+        assertEquals(40, testHond.getHonger());
+
     }
 
-    @org.junit.jupiter.api.Test
-    void keyTyped() {
-        //Arrange,
-        // Act,
-        // Assert.
+
+    @Test
+    void keyPressedEnergyie() {
+        // Arrange
+        Hond testHond = new Hond("hond", 50, 50);
+
+        // Act
+        testHond.voer();
+
+        // Assert
+        assertEquals(55, testHond.getEnergie());
+
     }
 }
