@@ -6,7 +6,7 @@ public abstract class Dier {
     public Dier(String naam, int energie, int honger) {
         setNaam(naam);
         setEnergie(energie); // methode aanroep is dus mogelijk!
-        //TODO
+        setHonger(honger);
     }
 
     public String getNaam() {
@@ -35,7 +35,7 @@ public abstract class Dier {
 
     private int begrensWaarde(int waarde)
     {
-        // TODO
+        waarde = Math.max(0, Math.min(100, waarde));
         return waarde;
     }
 }

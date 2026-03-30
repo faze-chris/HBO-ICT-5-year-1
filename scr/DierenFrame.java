@@ -61,9 +61,14 @@ public class DierenFrame extends JFrame implements KeyListener {
         // is dier een object dat interface Test.Verzorgbaar implementeert?
         // Ja? Dan wordt verzorgbaar aangemaakt als een gecast object van type Test.Verzorgbaar
         if (dier instanceof Verzorgbaar verzorgbaar) {
-            //TODO
+            if (toets == KeyEvent.VK_F) {
+                verzorgbaar.voer();
+                refreshView();
+            } else if (toets == KeyEvent.VK_S) {
+                verzorgbaar.speel();
+                refreshView();
+            }
         }
-
         panel.requestFocusInWindow();
     }
 

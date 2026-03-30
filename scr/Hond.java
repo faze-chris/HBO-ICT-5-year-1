@@ -1,8 +1,18 @@
-public class Hond extends Dier {
+public class Hond extends Dier implements Verzorgbaar {
+
     public Hond(String naam, int energie, int honger) {
-        // TODO
+        super(naam, energie, honger);
     }
 
-    //TODO met iets van een interface
+    @Override
+    public void voer() {
+        setHonger(getHonger() - 10);
+        setEnergie(getEnergie() + 5);
+    }
 
+    @Override
+    public void speel() {
+        setEnergie(getEnergie() - 15);
+        setHonger(getHonger() + 10);
+    }
 }
