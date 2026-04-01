@@ -17,9 +17,14 @@ public class TemperatuurModel implements TemperatuurSubject {
     }
 
     public String getStatus() {
-        if (temperatuur < 10) return "Koud";
-        if (temperatuur < 25) return "Aangenaam";
-        return "Warm";
+        if (temperatuur < 10) {
+            return "Koud";
+        }
+        if (temperatuur < 25) {
+            return "Aangenaam";
+        } else {
+            return "warm";
+        }
     }
 
     public void warmer() {
