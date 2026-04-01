@@ -48,6 +48,8 @@ public class TemperatuurModel implements TemperatuurSubject {
 
     @Override
     public void notifyObservers() {
-        observers.forEach(observer -> observer.update(temperatuur, getStatus()));
+        for (TemperatuurObserver observer : observers) {
+            observer.update(temperatuur, getStatus());
+        }
     }
 }
