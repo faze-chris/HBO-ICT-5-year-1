@@ -2,7 +2,7 @@ package View;
 
 import javax.swing.*;
 import java.awt.*;
-
+import Observer.TemperatuurObserver;
 public class TemperatuurView extends JFrame implements TemperatuurObserver {
     private JLabel lblTemperatuurTitel;
     private JLabel lblTemperatuur;

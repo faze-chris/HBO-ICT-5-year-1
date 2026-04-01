@@ -1,7 +1,8 @@
 package Controller;
 
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+import Model.TemperatuurModel;
+import View.TemperatuurView;
+
 
 public class TemperatuurController {
     private TemperatuurModel model;
@@ -11,22 +12,12 @@ public class TemperatuurController {
         this.model = model;
         this.view = view;
 
-        this.view.getBtnWarmer().addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
-                model.warmer();
-            }
-        });
+        koppelKnoppen();
+    }
 
-        this.view.getBtnKouder().addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
-                model.kouder();
-            }
-        });
-
-        this.view.getBtnReset().addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
-                model.reset();
-            }
-        });
+    private void koppelKnoppen() {
+        view.getBtnWarmer().addActionListener(e -> model.warmer());
+        view.getBtnKouder().addActionListener(e -> model.kouder());
+        view.getBtnReset().addActionListener(e -> model.reset());
     }
 }

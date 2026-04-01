@@ -1,5 +1,7 @@
 // Hier komen de imports van jouw klassen.
-
+import Controller.TemperatuurController;
+import Model.TemperatuurModel;
+import View.TemperatuurView;
 import javax.swing.*;
 
 public class Main {
