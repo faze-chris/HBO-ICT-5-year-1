@@ -2,6 +2,7 @@ package Model;
 
 import Observer.TemperatuurObserver;
 import Observer.TemperatuurSubject;
+
 import java.util.ArrayList;
 import java.util.List;
 
