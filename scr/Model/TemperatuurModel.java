@@ -7,9 +7,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class TemperatuurModel implements TemperatuurSubject {
-    private final int START_TEMPERATUUR = 20;
+    private final int startTemp = 20;
 
-    private int temperatuur = START_TEMPERATUUR;
+    private int temperatuur = startTemp;
     private List<TemperatuurObserver> observers = new ArrayList<>();
 
     public int getTemperatuur() {
@@ -42,7 +42,7 @@ public class TemperatuurModel implements TemperatuurSubject {
     }
 
     public void reset() {
-        temperatuur = START_TEMPERATUUR;
+        temperatuur = startTemp;
         notifyObservers();
     }
 
